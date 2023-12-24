@@ -1,0 +1,34 @@
+#!/bin/bash
+python3 main.py --dataset WHG \
+    --exp_version evaluation_test_9 \
+    --train_src_file data/WHG/new4_train.src_after_cleaning.txt \
+    --train_dst_file data/WHG/new4_train.dst_after_cleaning.txt \
+    --val_src_file data/WHG/new4_validation.src \
+    --val_dst_file data/WHG/new4_validation.dst \
+    --test_src_file data/WHG/new4_test.src \
+    --test_dst_file data/WHG/new4_test.dst \
+    --model_name_or_path google/mt5-small \
+    --tokenizer_name_or_path google/mt5-small \
+    --eval_checkpoint_path outputs/WHG/lr_3e-4_bs18_epoch10_seq2seq_baseline/final_model_dict.pkl \
+    --retrieval_concat_number 0 \
+    --retrieval_index_path_for_train None \
+    --retrieval_index_path_for_val None \
+    --retrieval_index_path_for_test None \
+    --selector_result_path_for_train None \
+    --selector_result_path_for_val None \
+    --selector_result_path_for_test None \
+     --max_source_length 256 \
+    --max_target_length 32 \
+    --n_gpu 1 \
+    --device cuda:0 \
+    --train_batch_size 18 \
+    --eval_batch_size 72 \
+    --gradient_accumulation_steps 1 \
+    --learning_rate 3e-4 \
+    --num_train_epochs 10 \
+    --seed 42 \
+    --weight_decay 1e-5 \
+    --adam_epsilon 1e-8 \
+    --warmup_steps 0.06 \
+    --load_pretrained_parameters \
+    --do_direct_eval

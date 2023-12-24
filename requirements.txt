@@ -1,0 +1,14 @@
+torch>=1.10.0
+jsonargparse[signatures,urls]>=4.3.1
+omegaconf
+pytorch-lightning
+rich
+gpustat
+matplotlib
+sentencepiece
+rouge
+nltk
+transformers
+gensim==3.8.1
+simcse
+ipdb

@@ -1,6 +1,12 @@
 # RIGHT: Retrieval-augmented Generation for Mainstream Hashtag Recommendation
 The source code of "RIGHT: Retrieval-augmented Generation for Mainstream Hashtag Recommendation (ECIR 2024)":
 
+## Datasets
+Apply and download from:
+```
+https://github.com/OpenSUM/HashtagGen
+```
+
 ## Requerements
 ```
 torch>=1.10.0

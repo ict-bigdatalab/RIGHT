@@ -28,11 +28,13 @@ ipdb
 ## Citation
 Please cite the paper if it is helpful to you.
 ```
-@article{fan2023right,
-      title={RIGHT: Retrieval-augmented Generation for Mainstream Hashtag Recommendation}, 
-      author={Fan, Run-Ze and Fan, Yixing and Chen, Jiangui and Guo, Jiafeng and Zhang, Ruqing and Cheng, Xueqi},
-      year={2023},
-      journal={arXiv preprint arXiv:2312.10466},
-      url={https://arxiv.org/abs/2312.10466}
+@inproceedings{fan2024right,
+  title={RIGHT: Retrieval-Augmented Generation for Mainstream Hashtag Recommendation},
+  author={Fan, Run-Ze and Fan, Yixing and Chen, Jiangui and Guo, Jiafeng and Zhang, Ruqing and Cheng, Xueqi},
+  booktitle={European Conference on Information Retrieval},
+  pages={39--55},
+  year={2024},
+  organization={Springer},
+  url={https://link.springer.com/chapter/10.1007/978-3-031-56027-9_3}
 }
 ```
